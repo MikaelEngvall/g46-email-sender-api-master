@@ -1,0 +1,14 @@
+###
+POST http://localhost:9090/api/v1/email
+Content-Type: application/json
+
+{
+  "to": "mikael@engvall.org",
+  "subject": "Try this out",
+  "html": "<H1> Lite coolt </H1> <br> <p> Att man kan skicka html-kod som sedan dyker upp i din email</p> <a href = 'http://www.sapo.se'> Klicka INTE på denna länk </a>",
+  "type": 1
+}
+
+###
+GET http://localhost:9090/api/v1/email/getall
+
