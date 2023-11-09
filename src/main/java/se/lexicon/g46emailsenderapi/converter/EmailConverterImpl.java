@@ -20,16 +20,16 @@ public class EmailConverterImpl implements EmailConverter {
                 .build();
     }
 
-//    @Override
-//    public Email toEmailEntity(EmailDTOView dtoView) {
-//        Email.EmailBuilder taskBuilder = Email.builder()
-//                .id(dtoView.getId())
-//                .from(dtoView.getFrom())
-//                .to(dtoView.getTo())
-//                .subject(dtoView.getSubject())
-//                .content(dtoView.getContent())
-//                .dateTime(dtoView.getDateTime())
-//                .type(dtoView.getType());
-//        return taskBuilder.build();
-//    }
+    @Override
+    public Email toEmailEntity(EmailDTOView dtoView) {
+        Email.EmailBuilder taskBuilder = Email.builder()
+                .id(dtoView.getId())
+                .from(dtoView.getFrom())
+                .to(dtoView.getTo())
+                .subject(dtoView.getSubject())
+                .content(dtoView.getContent())
+                .dateTime(dtoView.getDateTime())
+                .type(dtoView.getType());
+        return taskBuilder.build();
+    }
 }

@@ -10,5 +10,5 @@ public interface EmailConverter {
 
     EmailDTOView toEmailDTOView(Email entity);
 
-//    Email toEmailEntity(EmailDTOView dtoView);
+    Email toEmailEntity(EmailDTOView dtoView);
 }
